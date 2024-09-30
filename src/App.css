@@ -1,0 +1,54 @@
+/* App styles */
+.App {
+  text-align: center;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201012/pngtree-white-cloud-on-blue-sky-weather-background-image_410050.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  height: 100vh; /* Ensure full height */
+  color: rgb(11, 11, 11); /* Default text color */
+  overflow: hidden; /* Prevent overflow from any elements */
+}
+
+.App-header {
+  background-color: rgba(40, 44, 52, 0.8); /* Transparent background for readability */
+  min-height: 100vh; /* Full height */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Column direction */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  border-radius: 15px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for App-header */
+.App-header:hover {
+  background-color: rgba(40, 44, 52, 0.9); /* Darken background on hover */
+}
+
+/* Styles for the Weather component */
+.weather-container {
+  padding: 20px; /* Padding around the weather display */
+  border: 2px solid #61dafb; /* Border for visibility */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+
+.weather-container:hover {
+  box-shadow: 0 0 20px #61dafb, 0 0 30px #61dafb; /* Glowing effect on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.App-link {
+  color: #61dafb; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold link text */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.App-link:hover {
+  color: #ffcc00; /* Change color on hover */
+}
